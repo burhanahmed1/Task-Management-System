@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{927B13CC-BDFE-4B81-8354-5054ED6D8AF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SE_Project</RootNamespace>
+    <AssemblyName>SE_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.9.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.Charts.WinForms.1.0.9\lib\net472\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AddProjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProjects.Designer.cs">
+      <DependentUpon>AddProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeleteProjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DeleteProjects.Designer.cs">
+      <DependentUpon>DeleteProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\DBHelper.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagesParts\ProjectCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagesParts\ProjectCard.Designer.cs">
+      <DependentUpon>ProjectCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagesParts\AllProjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagesParts\AllProjects.Designer.cs">
+      <DependentUpon>AllProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagesParts\ProjectsCompleted.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagesParts\ProjectsCompleted.Designer.cs">
+      <DependentUpon>ProjectsCompleted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagesParts\ProjectsInProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagesParts\ProjectsInProgress.Designer.cs">
+      <DependentUpon>ProjectsInProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagesParts\Starred_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagesParts\Starred_1.Designer.cs">
+      <DependentUpon>Starred_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagesParts\ToDo_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagesParts\ToDo_1.Designer.cs">
+      <DependentUpon>ToDo_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagesParts\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagesParts\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Starred.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Starred.Designer.cs">
+      <DependentUpon>Starred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ToDo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ToDo.Designer.cs">
+      <DependentUpon>ToDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Projects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projects.Designer.cs">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddProjects.resx">
+      <DependentUpon>AddProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeleteProjects.resx">
+      <DependentUpon>DeleteProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesParts\ProjectCard.resx">
+      <DependentUpon>ProjectCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesParts\AllProjects.resx">
+      <DependentUpon>AllProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesParts\ProjectsCompleted.resx">
+      <DependentUpon>ProjectsCompleted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesParts\ProjectsInProgress.resx">
+      <DependentUpon>ProjectsInProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesParts\Starred_1.resx">
+      <DependentUpon>Starred_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesParts\ToDo_1.resx">
+      <DependentUpon>ToDo_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagesParts\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Starred.resx">
+      <DependentUpon>Starred.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ToDo.resx">
+      <DependentUpon>ToDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projects.resx">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
