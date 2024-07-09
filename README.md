@@ -81,8 +81,8 @@ TaskSphere is an application designed to help you efficiently manage your tasks 
 7. **Dashboard Overview:**
     - Use the dashboard to get a quick overview of all tasks, their statuses, and important tasks.
   
-8. **Exit/Close App**
-   Click on the Exit icon in the bottom of the main left panel.
+8. **Exit/Close App:**
+    - Click on the Exit icon in the bottom of the main left panel.
 
 ## Contributing
 
