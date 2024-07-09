@@ -94,4 +94,4 @@ This project is licensed under the MIT License.
 
 ## Acknowledgements
 
-- Inspiration for this project came from the need for efficient task management tools.
+Inspiration for this project came from the need for efficient task management tools.
