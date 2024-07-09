@@ -4,6 +4,17 @@
 
 TaskSphere is an application designed to help you efficiently manage your tasks and to-do lists. Built with C# and the .NET framework, this system offers a user-friendly GUI and robust database connectivity. With TaskSphere, you can create tasks, organize them into to-do lists, set statuses, mark important tasks, and delete tasks. The comprehensive dashboard provides an overview of all your tasks.
 
+## Graphical User Interface 
+
+<div align="center">
+  
+  <img src="sc/Login.png" alt="Login Page" width="700"/>
+  <img src="sc/Dashboard.png" alt="DashBoard Page" width="700"/>
+  <img src="sc/AllProjects.png" alt="Tasks Page" width="700"/>
+  <img src="sc/AddProjects.png" alt="Add Tasks Page" width="700"/>
+</div>
+
+
 ## Technologies Used
 
 - C#
@@ -32,7 +43,7 @@ TaskSphere is an application designed to help you efficiently manage your tasks 
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/TaskSphere.git
+    git clone https://github.com/burhanahmed1/Task-Management-System.git
     ```
 
 2. **Open the solution file:**
@@ -48,24 +59,30 @@ TaskSphere is an application designed to help you efficiently manage your tasks 
 
 ### Usage
 
-1. **Creating Tasks:**
+1. **Login/SignUp**
+    - For a new user SignUp is compulsory, after SignUp user's data will be stored in the database and for his next visits he/she just Login to enter the app.
+
+2. **Creating Tasks:**
     - Open the application and navigate to the task creation section.
     - Enter task details and save.
 
-2. **Managing To-Do Lists:**
+3. **Managing To-Do Lists:**
     - Create new lists, add tasks to them, and organize as needed.
 
-3. **Setting Task Status:**
+4. **Setting Task Status:**
     - Update the status of tasks to 'Pending' or 'Completed' from the task details view.
 
-4. **Marking Important Tasks:**
+5. **Marking Important Tasks:**
     - Star tasks to mark them as important for quick access.
 
-5. **Deleting Tasks:**
+6. **Deleting Tasks:**
     - Remove tasks from your list by selecting the delete option.
 
-6. **Dashboard Overview:**
+7. **Dashboard Overview:**
     - Use the dashboard to get a quick overview of all tasks, their statuses, and important tasks.
+  
+8. **Exit/Close App**
+   Click on the Exit icon in the bottom of the main left panel.
 
 ## Contributing
 
@@ -73,9 +90,8 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Acknowledgements
 
 - Inspiration for this project came from the need for efficient task management tools.
-- Thanks to the developers and community for their support and contributions.
