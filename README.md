@@ -8,10 +8,10 @@ TaskSphere is an application designed to help you efficiently manage your tasks 
 
 <div align="center">
   
-  <img src="sc/Login.png" alt="Login Page" width="700"/>
-  <img src="sc/Dashboard.png" alt="Dashboard Page" width="700"/>
-  <img src="sc/AllProjects.png" alt="AllProjects Page" width="700"/>
-  <img src="sc/AddProjects.png" alt="AddProjects Page" width="700"/>
+  <img src="sc/Login.png" alt="Login Page" width="800"/>
+  <img src="sc/Dashboard.png" alt="Dashboard Page" width="800"/>
+  <img src="sc/AllProjects.png" alt="AllProjects Page" width="800"/>
+  <img src="sc/AddProjects.png" alt="AddProjects Page" width="800"/>
 </div>
 
 
